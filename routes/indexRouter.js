@@ -5,3 +5,5 @@ var indexController = require("../controllers/indexController")
 
 
 router.post('/register',validations,indexController.registrando );
+
+module.exports = router;
