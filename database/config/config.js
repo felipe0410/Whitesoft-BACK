@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "00000000",
     "database": "mydb",
-    "host": "127.0.0.1",
+    "host": "mydb.c3nx4pjxquh0.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {

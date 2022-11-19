@@ -1,12 +1,11 @@
 
 module.exports = (sequelize, dataTypes) => {
-    let alias = "registro";
+    let alias = "Registros";
     let cols = {
         idRegistro: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-  
         },
         nombre: {
             type: dataTypes.STRING
@@ -20,13 +19,12 @@ module.exports = (sequelize, dataTypes) => {
         },
         correo: {
             type: dataTypes.STRING
-        },
-        
+        },   
     }
     let config = {
-        tableName: "registro",
+        tableName: "Registros",
         timestamps: false
     }
-    const registro = sequelize.define(alias, cols, config);
-    return registro;
+    const Registros = sequelize.define(alias, cols, config);
+    return Registros;
 }
