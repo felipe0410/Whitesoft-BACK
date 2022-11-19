@@ -1,8 +1,6 @@
 /* const db = require("../database/models"); */
 const { validationResult, body } = require("express-validator");
 const db = require("../database/models");
-
-
 const indexController = {
     registrando: async function (req, res, next) {
         const resultValidation = validationResult(req);
@@ -21,6 +19,9 @@ const indexController = {
                 return res.send({db:"exito"})
             }
         )
+    },
+    index: function(req,res){
+       return res.send("bienvenidos al back(node.js)")
     }
 }
 
